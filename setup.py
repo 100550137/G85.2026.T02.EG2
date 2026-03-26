@@ -23,7 +23,7 @@
 #
 # This script is designed to be used in combination with `pip install` ONLY
 #
-# DO NOT RUN MANUALLY
+# DO NOT RUN MANUALLY a
 #
 
 import os
