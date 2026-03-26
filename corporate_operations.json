@@ -1,0 +1,42 @@
+[
+    {
+        "company_cif": "A58818501",
+        "project_description": "Proyecto A",
+        "project_acronym": "ProyA",
+        "project_budget": 50000.01,
+        "department": "LEGAL",
+        "starting_date": "01/01/2025",
+        "time_stamp": 1735689599.0,
+        "project_id": "023fe787c069b519f5a06e8ebbbc0709"
+    },
+    {
+        "company_cif": "A58818501",
+        "project_description": "Proyecto AB",
+        "project_acronym": "ProyAB",
+        "project_budget": 50000.0,
+        "department": "FINANCE",
+        "starting_date": "02/02/2026",
+        "time_stamp": 1735689599.0,
+        "project_id": "5cbcd62da7907600e71b8cda317ff5ff"
+    },
+    {
+        "company_cif": "A58818501",
+        "project_description": "Gestion de Redes Empresariales",
+        "project_acronym": "GRedes2028",
+        "project_budget": 1000000.0,
+        "department": "LOGISTICS",
+        "starting_date": "31/12/2027",
+        "time_stamp": 1735689599.0,
+        "project_id": "f833ba1766ae4ac3c6ef872bdd300894"
+    },
+    {
+        "company_cif": "A58818501",
+        "project_description": "Sistema Logistica Empresarial",
+        "project_acronym": "GLogicEmp",
+        "project_budget": 999999.99,
+        "department": "HR",
+        "starting_date": "30/11/2027",
+        "time_stamp": 1735689599.0,
+        "project_id": "168e0cfd4685766c9f34326cbd4aa970"
+    }
+]
