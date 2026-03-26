@@ -1,12 +1,13 @@
 import json
 import os
+import re
 from datetime import datetime
 from uc3m_consulting.enterprise_project import EnterpriseProject
 from uc3m_consulting.enterprise_management_exception import EnterpriseManagementException
-"""Module """
+
 
 class EnterpriseManager:
-    """Class for providing the methods for managing the orders"""
+    """Clase para la gestión de operaciones corporativas"""
 
     # Ruta del fichero según enunciado
     DATA_FILE = "corporate_operations.json"
@@ -17,82 +18,102 @@ class EnterpriseManager:
     def register_project(self, company_cif: str, project_acronym: str,
                          project_description: str, department: str,
                          date: str, budget: float):
-        """RF1: Registro de proyecto con validaciones y persistencia JSON"""
+        """RF1: Registro de proyecto con validaciones CEV/CENV y VLV/VLNV"""
 
-        # 1. Validación de CIF (CM-FR-01-I1)
+        # --- 1. VALIDACIÓN company_cif ---
+        if not isinstance(company_cif, str):
+            raise EnterpriseManagementException("CENV1: El CIF debe ser string")
+        if len(company_cif) != 9:
+            raise EnterpriseManagementException("CENV3/4: El CIF debe tener 9 caracteres")
+        if not company_cif[0].isalpha():
+            raise EnterpriseManagementException("CENV5: El primer carácter debe ser una letra")
         if not self.validate_cif(company_cif):
-            raise EnterpriseManagementException("CIF no válido")
+            raise EnterpriseManagementException("CENV2: El CIF no es válido")
 
-        # 2. Validación de Acrónimo (CM-FR-01-I2): 5-10 chars, Alfanumérico
+        # --- 2. VALIDACIÓN project_acronym ---
+        if not isinstance(project_acronym, str):
+            raise EnterpriseManagementException("CENV6: El acrónimo debe ser string")
         if not (5 <= len(project_acronym) <= 10):
-            raise EnterpriseManagementException("Acrónimo no válido: longitud incorrecta")
+            raise EnterpriseManagementException("CENV7/8: Longitud de acrónimo inválida (5-10)")
         if not project_acronym.isalnum():
-            raise EnterpriseManagementException("Acrónimo no válido: solo A-Z y 0-9")
+            raise EnterpriseManagementException("CENV9: Caracteres no permitidos en el acrónimo")
 
-        # 3. Validación de Descripción (CM-FR-01-I3): 10-30 chars
+        # --- 3. VALIDACIÓN project_description ---
+        if not isinstance(project_description, str):
+            raise EnterpriseManagementException("CENV10: La descripción debe ser string")
         if not (10 <= len(project_description) <= 30):
-            raise EnterpriseManagementException("Descripción no válida: longitud incorrecta")
+            raise EnterpriseManagementException("CENV11/12: Longitud de descripción inválida (10-30)")
 
-        # 4. Validación de Departamento (CM-FR-01-I4)
-        allowed_depts = ["HR", "FINANCE", "LEGAL", "LOGISTICS"]
-        if department not in allowed_depts:
-            raise EnterpriseManagementException("Departamento no válido")
+        # --- 4. VALIDACIÓN department ---
+        if not isinstance(department, str):
+            raise EnterpriseManagementException("CENV13: El departamento debe ser string")
+        if department not in ["HR", "FINANCE", "LEGAL", "LOGISTICS"]:
+            raise EnterpriseManagementException("CENV14: Departamento no permitido")
 
-        # 5. Validación de Presupuesto (CM-FR-01-I6): Rango y 2 decimales
-        if not isinstance(budget, (float, int)) or not (50000.00 <= budget <= 1000000.00):
-            raise EnterpriseManagementException("Presupuesto fuera de rango")
+        # --- 5. VALIDACIÓN budget ---
+        if not isinstance(budget, (float, int)):
+            raise EnterpriseManagementException("CENV27: El presupuesto debe ser numérico")
 
-        # Verificar que tiene exactamente 2 decimales (comparando con su redondeo)
+        # Rango según enunciado (50k - 1M)
+        if not (50000.00 <= budget <= 1000000.00):
+            raise EnterpriseManagementException("CENV28/29: Presupuesto fuera de rango")
+
+        # Máximo 2 decimales significativos
         if round(budget, 2) != budget:
-            raise EnterpriseManagementException("El presupuesto debe tener 2 decimales")
+            raise EnterpriseManagementException("CENV30: El presupuesto debe tener máximo 2 decimales")
 
-        # 6. Validación de Fecha (CM-FR-01-I5)
+        # --- 6. VALIDACIÓN date (REVISADA Y ROBUSTA) ---
+        if not isinstance(date, str):
+            raise EnterpriseManagementException("CENV15: La fecha debe ser string")
+
+        # Formato estricto DD/MM/YYYY (ej: 02/02/2026)
+        if not re.match(r"^\d{2}/\d{2}/\d{4}$", date):
+            raise EnterpriseManagementException("CENV16: Formato de fecha inválido. Use DD/MM/YYYY")
+
         try:
             date_obj = datetime.strptime(date, "%d/%m/%Y")
+
             # Rango de años 2025-2027
             if not (2025 <= date_obj.year <= 2027):
-                raise EnterpriseManagementException("Fecha fuera de rango (2025-2027)")
-            # Fecha igual o posterior a hoy (fecha de solicitud)
-            if date_obj.date() < datetime.now().date():
-                raise EnterpriseManagementException("La fecha debe ser igual o posterior a hoy")
+                raise EnterpriseManagementException("CENV24/25: Año fuera de rango (2025-2027)")
+
+            # Comparación con la fecha actual (respeta freeze_time)
+            today = datetime.now().date()
+            project_date = date_obj.date()
+
+            if project_date < today:
+                raise EnterpriseManagementException("CENV26: La fecha es anterior al registro")
+
         except ValueError:
-            raise EnterpriseManagementException("Formato de fecha incorrecto")
+            raise EnterpriseManagementException("CENV16: Fecha cronológicamente imposible")
 
-        # 7. Crear objeto para generar el Project ID (MD5)
-        new_project = EnterpriseProject(
-            company_cif=company_cif,
-            project_acronym=project_acronym,
-            project_description=project_description,
-            department=department,
-            starting_date=date,
-            project_budget=budget
-        )
-        project_id = new_project.project_id
+        # --- 7. PROCESO Y PERSISTENCIA ---
+        new_project = EnterpriseProject(company_cif, project_acronym, project_description,
+                                        department, date, budget)
 
-        # 8. Gestión del fichero JSON y Duplicados (CM-FR-01-P3 / O3)
+        # Carga del JSON con manejo de errores de fichero vacío o corrupto
         data = []
         if os.path.exists(self.DATA_FILE):
             try:
-                with open(self.DATA_FILE, "r", encoding="utf-8") as file:
-                    data = json.load(file)
-            except json.JSONDecodeError:
+                with open(self.DATA_FILE, "r", encoding="utf-8") as f:
+                    content = f.read()
+                    if content.strip():
+                        data = json.loads(content)
+            except (json.JSONDecodeError, IOError):
                 data = []
 
-        # Comprobar si ya existe el mismo acrónimo para el mismo CIF
-        for item in data:
-            if item["company_cif"] == company_cif and \
-                    item["project_acronym"] == project_acronym:
+        # Comprobar si ya existe el proyecto para ese CIF (O3)
+        for entry in data:
+            if entry.get("company_cif") == company_cif and \
+                    entry.get("project_acronym") == project_acronym:
                 raise EnterpriseManagementException("El proyecto ya existe para este CIF")
 
-        # 9. Guardar y retornar
+        # Guardar datos actualizados
         data.append(new_project.to_json())
-        try:
-            with open(self.DATA_FILE, "w", encoding="utf-8") as file:
-                json.dump(data, file, indent=4)
-        except Exception as e:
-            raise EnterpriseManagementException(f"Error al escribir en el fichero: {str(e)}")
+        with open(self.DATA_FILE, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4)
 
-        return project_id
+        return new_project.project_id
 
     @staticmethod
     def validate_cif(cif: str):
