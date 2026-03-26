@@ -87,5 +87,106 @@ class MyTestCase(unittest.TestCase):
         except EnterpriseManagementException as e:
             self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
 
+    @freeze_time("2024-12-31 23:59:59")
+    def test_05(self):
+        """Caso no válido: Cif incorrecto"""
+        cif = "123"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "30/11/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_06(self):
+        """Caso no válido: Cif incorrecto"""
+        cif = "ABCDEFGHI"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "30/11/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_07(self):
+        """Caso no válido: Cif incorrecto"""
+        cif = "1234567890"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "30/11/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_08(self):
+        """Caso no válido: Cif incorrecto"""
+        cif = "1ABCDEFGH"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "30/11/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_09(self):
+        """Caso no válido: Cif incorrecto"""
+        cif = "A5881850"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "30/11/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+
 if __name__ == '__main__':
     unittest.main()
