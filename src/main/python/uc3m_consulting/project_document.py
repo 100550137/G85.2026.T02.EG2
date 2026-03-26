@@ -2,7 +2,7 @@
 from datetime import datetime, timezone
 import hashlib
 
-class ProjectDocument():
+class ProjectDocument:
     """Class representing the information required for shipping of an order"""
 
     def __init__(self, project_id: str, file_name):
