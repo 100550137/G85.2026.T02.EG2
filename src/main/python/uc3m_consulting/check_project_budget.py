@@ -1,5 +1,5 @@
 """
-codigo para calcular el balance de los cantidades inflows y cantidades outlfows
+código para calcular el balance de las cantidades inflows y cantidades outflows
 
 """
 import json
@@ -16,7 +16,7 @@ class ProjectBudget:
 
     #node 1
     def check_project_budget(self,project_id:str)->bool:
-        """Calcular la diferencia del inflow - outflow """
+        """calcular la diferencia del inflow - outflow """
         #CM-FR-03-P1
         #node 2
         if not isinstance(project_id, str) or not re.match(self._id_pattern, project_id):
