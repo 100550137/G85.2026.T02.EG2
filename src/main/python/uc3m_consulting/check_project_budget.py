@@ -8,7 +8,7 @@ from datetime import datetime
 from src.main.python.uc3m_consulting.enterprise_management_exception import EnterpriseManagementException
 
 class ProjectBudget:
-    'class ProjectBudget:'
+    """class ProjectBudget:"""
     def __init__(self):
         self._flow_file="flows.json"
         self._output_file="project_balance.json"
@@ -51,7 +51,7 @@ class ProjectBudget:
 
     #node 15
     def save_project_budget(self,project_id:str, balance:float):
-        'save project budget'
+        """save project budget"""
         # CM-FR-03-P3
         result_data = { #node 16
             "project_id": project_id,
