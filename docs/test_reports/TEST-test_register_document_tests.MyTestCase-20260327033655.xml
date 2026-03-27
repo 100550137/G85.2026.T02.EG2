@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_register_document_tests.MyTestCase-20260327033655" tests="33" file="test_register_document_tests.py" time="0.384" timestamp="2026-03-27T03:36:56" failures="0" errors="30" skipped="0">
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_01_document" time="0.019" timestamp="2026-03-27T03:36:55"/>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_02_document" time="0.003" timestamp="2026-03-27T03:36:55"/>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_03_document" time="0.003" timestamp="2026-03-27T03:36:55"/>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_04_document" time="0.016" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 47, in test_04_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_05_document" time="0.007" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 58, in test_05_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 132, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_06_document" time="0.015" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 2 column 17 (char 17)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 69, in test_06_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_07_document" time="0.014" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 80, in test_07_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_08_document" time="0.013" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 91, in test_08_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_09_document" time="0.007" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 102, in test_09_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 132, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_10_document" time="0.012" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 2 column 52 (char 53)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 113, in test_10_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_11_document" time="0.012" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 3 column 5 (char 58)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 124, in test_11_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_12_document" time="0.013" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 53 (char 54)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 135, in test_12_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_13_document" time="0.012" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 2 column 52 (char 53)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 146, in test_13_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_14_document" time="0.012" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Illegal trailing comma before end of object: line 2 column 52 (char 53)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 157, in test_14_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_15_document" time="0.014" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 3 column 30 (char 84)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 168, in test_15_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_16_document" time="0.013" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 4 column 1 (char 85)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 179, in test_16_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_17_document" time="0.012" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Extra data: line 4 column 2 (char 86)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 190, in test_17_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_18_document" time="0.013" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 4 column 1 (char 85)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 201, in test_18_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_19_document" time="0.013" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 5 (char 6)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 212, in test_19_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_20_document" time="0.012" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 2 column 17 (char 18)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 223, in test_20_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_21_document" time="0.012" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 2 column 17 (char 18)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 234, in test_21_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_22_document" time="0.012" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 2 column 18 (char 19)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 245, in test_22_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_23_document" time="0.013" timestamp="2026-03-27T03:36:55">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 2 column 17 (char 18)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 256, in test_23_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_24_document" time="0.012" timestamp="2026-03-27T03:36:56">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 2 column 18 (char 19)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 267, in test_24_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_25_document" time="0.012" timestamp="2026-03-27T03:36:56">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 2 column 52 (char 53)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 278, in test_25_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_26_document" time="0.012" timestamp="2026-03-27T03:36:56">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 3 column 5 (char 59)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 289, in test_26_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_27_document" time="0.012" timestamp="2026-03-27T03:36:56">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 3 column 15 (char 69)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 300, in test_27_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_28_document" time="0.012" timestamp="2026-03-27T03:36:56">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 3 column 15 (char 69)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 311, in test_28_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_29_document" time="0.012" timestamp="2026-03-27T03:36:56">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 3 column 16 (char 70)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 322, in test_29_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_30_document" time="0.012" timestamp="2026-03-27T03:36:56">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 3 column 15 (char 69)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 333, in test_30_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_31_document" time="0.012" timestamp="2026-03-27T03:36:56">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting value: line 4 column 1 (char 71)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 344, in test_31_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_32_document" time="0.013" timestamp="2026-03-27T03:36:56">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 127, in register_document
+    data = json.load(f)
+    ^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+    ^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 3 column 30 (char 84)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 355, in test_32_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 129, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_33_document" time="0.007" timestamp="2026-03-27T03:36:56">
+		<error type="EnterpriseManagementException" message="El JSON no tiene la estructura esperada"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 366, in test_33_document
+    signature = manager.register_document(input_file)
+    ^^^^^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\main\python\uc3m_consulting\enterprise_manager.py", line 132, in register_document
+    raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+    ^^^^^^^^^^^
+uc3m_consulting.enterprise_management_exception.EnterpriseManagementException: El JSON no tiene la estructura esperada
+]]></error>
+	</testcase>
+</testsuite>
