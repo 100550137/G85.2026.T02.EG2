@@ -189,8 +189,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2024-12-31 23:59:59")
     def test_10(self):
-        """Caso no válido: Cif incorrecto"""
-        cif = "A5881850"
+        """Caso no válido: Acronym incorrecto"""
+        cif = "A58818501"
         acronym = 12345
         description = "Sistema Logistica Empresarial"
         department = "HR"
@@ -209,8 +209,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2024-12-31 23:59:59")
     def test_11(self):
-        """Caso no válido: Cif incorrecto"""
-        cif = "A5881850"
+        """Caso no válido: Acronym incorrecto"""
+        cif = "A58818501"
         acronym = "1234"
         description = "Sistema Logistica Empresarial"
         department = "HR"
@@ -229,8 +229,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2024-12-31 23:59:59")
     def test_12(self):
-        """Caso no válido: Cif incorrecto"""
-        cif = "A5881850"
+        """Caso no válido: Acronym incorrecto"""
+        cif = "A58818501"
         acronym = "12345678901"
         description = "Sistema Logistica Empresarial"
         department = "HR"
@@ -249,8 +249,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2024-12-31 23:59:59")
     def test_13(self):
-        """Caso no válido: Cif incorrecto"""
-        cif = "A5881850"
+        """Caso no válido: Acronym incorrecto"""
+        cif = "A58818501"
         acronym = "äöüß"
         description = "Sistema Logistica Empresarial"
         department = "HR"
@@ -269,8 +269,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2024-12-31 23:59:59")
     def test_14(self):
-        """Caso no válido: Cif incorrecto"""
-        cif = "A5881850"
+        """Caso no válido: Description incorrecto"""
+        cif = "A58818501"
         acronym = "GLogicEmp"
         description = 1234567890
         department = "HR"
@@ -289,8 +289,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2024-12-31 23:59:59")
     def test_15(self):
-        """Caso no válido: Cif incorrecto"""
-        cif = "A5881850"
+        """Caso no válido: Description incorrecto"""
+        cif = "A58818501"
         acronym = "GLogicEmp"
         description = "Gestiones"
         department = "HR"
@@ -309,8 +309,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2024-12-31 23:59:59")
     def test_16(self):
-        """Caso no válido: Cif incorrecto"""
-        cif = "A5881850"
+        """Caso no válido: Description incorrecto"""
+        cif = "A58818501"
         acronym = "GLogicEmp"
         description = "Gestion de Redes Empresariales1"
         department = "HR"
@@ -329,8 +329,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2024-12-31 23:59:59")
     def test_17(self):
-        """Caso no válido: Cif incorrecto"""
-        cif = "A5881850"
+        """Caso no válido: Department incorrecto"""
+        cif = "A58818501"
         acronym = "GLogicEmp"
         description = "Sistema Logistica Empresarial"
         department = 1
@@ -349,12 +349,332 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2024-12-31 23:59:59")
     def test_18(self):
-        """Caso no válido: Cif incorrecto"""
-        cif = "A5881850"
+        """Caso no válido: Department incorrecto"""
+        cif = "A58818501"
         acronym = "GLogicEmp"
         description = "Sistema Logistica Empresarial"
         department = "string"
         starting_date = "30/11/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_19(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = 420,69
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_20(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "String"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_21(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "5/01/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_22(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "100/01/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_23(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "00/01/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_24(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "32/01/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_25(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "01/1/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_26(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "01/100/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_27(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "01/00/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_28(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "01/13/2027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_29(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "01/01/202"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_30(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "01/01/02027"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_31(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "1/1/2024"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_32(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "1/1/2028"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_33(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "1/1/2029"
+        budget = 999999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_33(self):
+        """Caso no válido: Date incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "31/12/2024"
         budget = 999999.99
 
         manager = EnterpriseManager()
