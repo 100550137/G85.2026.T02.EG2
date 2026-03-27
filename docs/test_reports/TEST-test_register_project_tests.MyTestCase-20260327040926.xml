@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_register_project_tests.MyTestCase-20260327040926" tests="38" file="test_register_project_tests.py" time="0.171" timestamp="2026-03-27T04:09:28" failures="34" errors="0" skipped="0">
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_01" time="0.004" timestamp="2026-03-27T04:09:27"/>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_02" time="0.003" timestamp="2026-03-27T04:09:27"/>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_03" time="0.002" timestamp="2026-03-27T04:09:27"/>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_04" time="0.003" timestamp="2026-03-27T04:09:27"/>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_05" time="0.006" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 108, in test_05
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_06" time="0.006" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV2: El CIF no es válido"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 128, in test_06
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV2: El CIF no es válido
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_07" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 148, in test_07
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_08" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV5: El primer carácter debe ser una letra"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 168, in test_08
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV5: El primer carácter debe ser una letra
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_09" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 188, in test_09
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_10" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV6: El acrónimo debe ser string"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 208, in test_10
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV6: El acrónimo debe ser string
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_11" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV7/8: Longitud de acrónimo inválida (5-10)"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 228, in test_11
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV7/8: Longitud de acrónimo inválida (5-10)
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_12" time="0.004" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV7/8: Longitud de acrónimo inválida (5-10)"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 248, in test_12
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV7/8: Longitud de acrónimo inválida (5-10)
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_13" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV7/8: Longitud de acrónimo inválida (5-10)"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 268, in test_13
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV7/8: Longitud de acrónimo inválida (5-10)
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_14" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV10: La descripción debe ser string"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 288, in test_14
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV10: La descripción debe ser string
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_15" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV11/12: Longitud de descripción inválida (10-30)"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 308, in test_15
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV11/12: Longitud de descripción inválida (10-30)
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_16" time="0.004" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV11/12: Longitud de descripción inválida (10-30)"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 328, in test_16
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV11/12: Longitud de descripción inválida (10-30)
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_17" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV13: El departamento debe ser string"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 348, in test_17
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV13: El departamento debe ser string
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_18" time="0.004" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV14: Departamento no permitido"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 368, in test_18
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV14: Departamento no permitido
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_19" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV15: La fecha debe ser string"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 388, in test_19
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV15: La fecha debe ser string
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_20" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 408, in test_20
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_21" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 428, in test_21
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_22" time="0.005" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 448, in test_22
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_23" time="0.004" timestamp="2026-03-27T04:09:27">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Fecha cronológicamente imposible"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 468, in test_23
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Fecha cronológicamente imposible
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_24" time="0.004" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Fecha cronológicamente imposible"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 488, in test_24
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Fecha cronológicamente imposible
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_25" time="0.005" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 508, in test_25
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_26" time="0.005" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 528, in test_26
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_27" time="0.005" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Fecha cronológicamente imposible"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 548, in test_27
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Fecha cronológicamente imposible
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_28" time="0.004" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Fecha cronológicamente imposible"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 568, in test_28
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Fecha cronológicamente imposible
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_29" time="0.004" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 588, in test_29
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_30" time="0.004" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 608, in test_30
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_31" time="0.005" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 628, in test_31
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_32" time="0.004" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 648, in test_32
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV16: Formato de fecha inválido. Use DD/MM/YYYY
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_33" time="0.005" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV24/25: Año fuera de rango (2025-2027)"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 688, in test_33
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV24/25: Año fuera de rango (2025-2027)
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_34" time="0.004" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV27: El presupuesto debe ser numérico"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 708, in test_34
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV27: El presupuesto debe ser numérico
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_35" time="0.005" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV28/29: Presupuesto fuera de rango"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 728, in test_35
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV28/29: Presupuesto fuera de rango
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_36" time="0.005" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV28/29: Presupuesto fuera de rango"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 748, in test_36
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV28/29: Presupuesto fuera de rango
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_37" time="0.005" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: El proyecto ya existe para este CIF"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 768, in test_37
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: El proyecto ya existe para este CIF
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_38" time="0.004" timestamp="2026-03-27T04:09:28">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV30: El presupuesto debe tener máximo 2 decimales"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 788, in test_38
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV30: El presupuesto debe tener máximo 2 decimales
+]]></failure>
+	</testcase>
+</testsuite>
