@@ -687,5 +687,105 @@ class MyTestCase(unittest.TestCase):
         except EnterpriseManagementException as e:
             self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
 
+    @freeze_time("2024-12-31 23:59:59")
+    def test_34(self):
+        """Caso no válido: Budget incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "01/01/2025"
+        budget = "50k€"
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_35(self):
+        """Caso no válido: Budget incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "01/01/2025"
+        budget = 49999.99
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_36(self):
+        """Caso no válido: Budget incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "01/01/2025"
+        budget = 1000000.01
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_37(self):
+        """Caso no válido: Budget incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "01/01/2025"
+        budget = 50000.1
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
+    @freeze_time("2024-12-31 23:59:59")
+    def test_38(self):
+        """Caso no válido: Budget incorrecto"""
+        cif = "A58818501"
+        acronym = "GLogicEmp"
+        description = "Sistema Logistica Empresarial"
+        department = "HR"
+        starting_date = "01/01/2025"
+        budget = 50000.001
+
+        manager = EnterpriseManager()
+
+        try:
+            res = manager.register_project(cif, acronym, description,
+                                           department, starting_date, budget)
+            self.assertEqual(len(res), 32)
+
+        except EnterpriseManagementException as e:
+            self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+
 if __name__ == '__main__':
     unittest.main()
