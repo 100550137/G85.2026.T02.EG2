@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_register_document_tests.MyTestCase-20260327020802" tests="1" file="test_register_document_tests.py" time="0.018" timestamp="2026-03-27T02:08:02" failures="0" errors="0" skipped="0">
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_01_valid_registration" time="0.018" timestamp="2026-03-27T02:08:02"/>
+</testsuite>

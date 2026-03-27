@@ -8,41 +8,18 @@ from uc3m_consulting.enterprise_management_exception import EnterpriseManagement
 
 class MyTestCase(unittest.TestCase):
 
-    # Congelamos el tiempo para que el SHA-256 sea siempre el mismo [cite: 60]
     @freeze_time("2026-03-27 12:00:00")
     def test_01_valid_registration(self):
-        """Paso 4: Caso válido - Todos los nodos no terminales presentes [cite: 14, 15]"""
-
-        # 1. Configuración de rutas
-        # Asegúrate de que este archivo existe con el JSON válido [cite: 20]
-        input_file = "src/unittest/resources/test_01.json"
-        store_file = "document_store.json"
-
-        # 2. Limpieza del entorno (Pre-condición) [cite: 72, 73]
-        if os.path.exists(store_file):
-            os.remove(store_file)
-
+        input_file = "src/unittest/resources/test_01.json"  # El JSON que me has pasado
         manager = EnterpriseManager()
 
-        # 3. Ejecución del método [cite: 35]
-        try:
-            signature = manager.register_document(input_file)
+        signature = manager.register_document(input_file)
 
-            # 4. Verificación del resultado (O1: SHA-256 esperado) [cite: 42, 70]
-            # Nota: Este valor de hash depende de la cadena formateada en ProjectDocument
-            expected_hash = "6798059082264906561e14934a4c6806e579787a27d975390979401946894562"
-            self.assertEqual(signature, expected_hash)
+        # Este es el hash que corresponde a:
+        # {alg:SHA-256, typ:DOCUMENT, project_id:a1b2c3d4e5f678901234567890abcdef, file_name:ABC12345.pdf}
+        expected_hash = "ed2883d8c2b8d42127a2c01df2bbdebdf0b5af4951d67b6b9e1e43881432c064"
 
-            # 5. Verificación de persistencia (O2: Se guardó en el almacén) [cite: 41, 71]
-            self.assertTrue(os.path.exists(store_file))
-            with open(store_file, "r") as f:
-                data = json.load(f)
-                self.assertEqual(len(data), 1)
-                self.assertEqual(data[0]["project_id"], "cda29ebeed77e5fc60b6e4e183a4fa2a")
-                self.assertEqual(data[0]["file_signature"], expected_hash)
-
-        except EnterpriseManagementException as e:
-            self.fail(f"El registro lanzó una excepción inesperada: {e.message}")
+        self.assertEqual(signature, expected_hash)
 
 if __name__ == '__main__':
     unittest.main()

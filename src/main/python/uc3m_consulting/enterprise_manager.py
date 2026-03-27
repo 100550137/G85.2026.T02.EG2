@@ -1,9 +1,11 @@
+import hashlib
 import json
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 from uc3m_consulting.enterprise_project import EnterpriseProject
 from uc3m_consulting.enterprise_management_exception import EnterpriseManagementException
+from uc3m_consulting.project_document import ProjectDocument
 
 
 class EnterpriseManager:
@@ -116,7 +118,29 @@ class EnterpriseManager:
         return new_project.project_id
 
     def register_document(self, input_file: str):
-        pass
+
+        with open(input_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        project_id = data["PROJECT_ID"]
+        file_name = data["FILENAME"]
+
+        input_data = "{" + f"alg: SHA-256, typ: DOCUMENT, project_id: {project_id}, file_name: {file_name}" + "}"
+
+        signature = hashlib.sha256(input_data.encode("utf-8")).hexdigest()
+
+        storage_path = "document_store.json"
+
+        registro = {
+            "project_id": project_id,
+            "file_signature": signature,
+            "register_date": datetime.now(timezone.utc).timestamp()
+        }
+
+        with open(storage_path, "w", encoding="utf-8") as f:
+            json.dump([registro], f)
+
+        return signature
 
     @staticmethod
     def validate_cif(cif: str):
