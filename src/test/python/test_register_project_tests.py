@@ -648,7 +648,7 @@ class MyTestCase(unittest.TestCase):
             self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
 
     @freeze_time("2024-12-31 23:59:59")
-    def test_33(self):
+    def test_33_a(self):
         """Caso no válido: Date incorrecto"""
         cif = "A58818501"
         acronym = "GLogicEmp"
@@ -668,7 +668,7 @@ class MyTestCase(unittest.TestCase):
             self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
 
     @freeze_time("2024-12-31 23:59:59")
-    def test_33(self):
+    def test_33_b(self):
         """Caso no válido: Date incorrecto"""
         cif = "A58818501"
         acronym = "GLogicEmp"
