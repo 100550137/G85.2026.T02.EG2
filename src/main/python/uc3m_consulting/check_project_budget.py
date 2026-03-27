@@ -20,7 +20,7 @@ class ProjectBudget:
         #CM-FR-03-P1
         #node 2
         if not isinstance(project_id, str) or not re.match(self._id_pattern, project_id):
-            raise EnterpriseManagementException #node 3
+            raise EnterpriseManagementException("Invalid ID format") #node 3
         try: #node 4
             #CM-FR-03-P2
             with open(self._flow_file,"r",encoding="utf-8") as file:

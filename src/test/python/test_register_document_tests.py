@@ -1,13 +1,15 @@
+'register docs'
 import unittest
 from freezegun import freeze_time
 from uc3m_consulting.enterprise_manager import EnterpriseManager
 
 
 class MyTestCase(unittest.TestCase):
-
+    'testing'
     @freeze_time("2026-03-27 12:00:00")
     def test_01_document(self):
-        input_file = "src/unittest/resources/test_01.json"
+        'test 01'
+        input_file = "src/test/resources/test_01.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -18,7 +20,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_02_document(self):
-        input_file = "src/unittest/resources/test_02.json"
+        'test 02'
+        input_file = "src/test/resources/test_02.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -30,7 +33,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_03_document(self):
-        input_file = "src/unittest/resources/test_03.json"
+        'test 03'
+        input_file = "src/test/resources/test_03.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -41,7 +45,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_04_document(self):
-        input_file = "src/unittest/resources/test_04.json"
+        'test 04'
+        input_file = "src/test/resources/test_04.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -52,7 +57,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_05_document(self):
-        input_file = "src/unittest/resources/test_05.json"
+        'test 05'
+        input_file = "src/test/resources/test_05.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -63,7 +69,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_06_document(self):
-        input_file = "src/unittest/resources/test_06.json"
+        'test 06'
+        input_file = "src/test/resources/test_06.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -74,7 +81,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_07_document(self):
-        input_file = "src/unittest/resources/test_07.json"
+        'test 07'
+        input_file = "src/test/resources/test_07.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -85,7 +93,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_08_document(self):
-        input_file = "src/unittest/resources/test_08.json"
+        'test 08'
+        input_file = "src/test/resources/test_08.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -96,7 +105,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_09_document(self):
-        input_file = "src/unittest/resources/test_09.json"
+        'test 09'
+        input_file = "src/test/resources/test_09.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -107,7 +117,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_10_document(self):
-        input_file = "src/unittest/resources/test_10.json"
+        'test 10'
+        input_file = "src/test/resources/test_10.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -118,7 +129,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_11_document(self):
-        input_file = "src/unittest/resources/test_11.json"
+        'test 11'
+        input_file = "src/test/resources/test_11.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -129,7 +141,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_12_document(self):
-        input_file = "src/unittest/resources/test_12.json"
+        'test 12'
+        input_file = "src/test/resources/test_12.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -140,7 +153,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_13_document(self):
-        input_file = "src/unittest/resources/test_13.json"
+        'test 13'
+        input_file = "src/test/resources/test_13.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -151,7 +165,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_14_document(self):
-        input_file = "src/unittest/resources/test_14.json"
+        'test 14'
+        input_file = "src/test/resources/test_14.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -162,7 +177,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_15_document(self):
-        input_file = "src/unittest/resources/test_15.json"
+        'test 15'
+        input_file = "src/test/resources/test_15.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -173,7 +189,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_16_document(self):
-        input_file = "src/unittest/resources/test_16.json"
+        'test 16'
+        input_file = "src/test/resources/test_16.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -184,7 +201,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_17_document(self):
-        input_file = "src/unittest/resources/test_17.json"
+        'test 17'
+        input_file = "src/test/resources/test_17.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -195,7 +213,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_18_document(self):
-        input_file = "src/unittest/resources/test_18.json"
+        'test 18'
+        input_file = "src/test/resources/test_18.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -206,7 +225,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_19_document(self):
-        input_file = "src/unittest/resources/test_19.json"
+        'test 19'
+        input_file = "src/test/resources/test_19.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -217,7 +237,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_20_document(self):
-        input_file = "src/unittest/resources/test_20.json"
+        'test 20'
+        input_file = "src/test/resources/test_20.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -228,7 +249,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_21_document(self):
-        input_file = "src/unittest/resources/test_21.json"
+        'test 21'
+        input_file = "src/test/resources/test_21.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -239,7 +261,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_22_document(self):
-        input_file = "src/unittest/resources/test_22.json"
+        'test 22'
+        input_file = "src/test/resources/test_22.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -250,7 +273,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_23_document(self):
-        input_file = "src/unittest/resources/test_23.json"
+        'test 23'
+        input_file = "src/test/resources/test_23.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -261,7 +285,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_24_document(self):
-        input_file = "src/unittest/resources/test_24.json"
+        'test 24'
+        input_file = "src/test/resources/test_24.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -272,7 +297,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_25_document(self):
-        input_file = "src/unittest/resources/test_25.json"
+        'test 25'
+        input_file = "src/test/resources/test_25.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -283,7 +309,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_26_document(self):
-        input_file = "src/unittest/resources/test_26.json"
+        'test 26'
+        input_file = "src/test/resources/test_26.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -294,7 +321,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_27_document(self):
-        input_file = "src/unittest/resources/test_27.json"
+        'test 27'
+        input_file = "src/test/resources/test_27.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -305,7 +333,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_28_document(self):
-        input_file = "src/unittest/resources/test_28.json"
+        'test 28'
+        input_file = "src/test/resources/test_28.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -316,7 +345,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_29_document(self):
-        input_file = "src/unittest/resources/test_29.json"
+        'test 29'
+        input_file = "src/test/resources/test_29.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -327,7 +357,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_30_document(self):
-        input_file = "src/unittest/resources/test_30.json"
+        'test 30'
+        input_file = "src/test/resources/test_30.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -338,7 +369,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_31_document(self):
-        input_file = "src/unittest/resources/test_31.json"
+        'test 31'
+        input_file = "src/test/resources/test_31.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -349,7 +381,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_32_document(self):
-        input_file = "src/unittest/resources/test_32.json"
+        'test 32'
+        input_file = "src/test/resources/test_32.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -360,7 +393,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_33_document(self):
-        input_file = "src/unittest/resources/test_33.json"
+        'test 33'
+        input_file = "src/test/resources/test_33.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -371,7 +405,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_34_document(self):
-        input_file = "src/unittest/resources/test_34.json"
+        'test 34'
+        input_file = "src/test/resources/test_34.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -382,7 +417,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_35_document(self):
-        input_file = "src/unittest/resources/test_35.json"
+        'test 35'
+        input_file = "src/test/resources/test_35.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -393,7 +429,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_36_document(self):
-        input_file = "src/unittest/resources/test_36.json"
+        'test 36'
+        input_file = "src/test/resources/test_36.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -404,7 +441,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_37_document(self):
-        input_file = "src/unittest/resources/test_37.json"
+        'test 37'
+        input_file = "src/test/resources/test_37.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -415,7 +453,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_38_document(self):
-        input_file = "src/unittest/resources/test_38.json"
+        'test 38'
+        input_file = "src/test/resources/test_38.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -426,7 +465,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_39_document(self):
-        input_file = "src/unittest/resources/test_39.json"
+        'test 39'
+        input_file = "src/test/resources/test_39.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -437,7 +477,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_40_document(self):
-        input_file = "src/unittest/resources/test_40.json"
+        'test 40'
+        input_file = "src/test/resources/test_40.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -448,7 +489,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_41_document(self):
-        input_file = "src/unittest/resources/test_41.json"
+        'test 41'
+        input_file = "src/test/resources/test_41.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -459,7 +501,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_42_document(self):
-        input_file = "src/unittest/resources/test_42.json"
+        'test 42'
+        input_file = "src/test/resources/test_42.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
@@ -470,7 +513,8 @@ class MyTestCase(unittest.TestCase):
 
     @freeze_time("2026-03-27 12:00:00")
     def test_43_document(self):
-        input_file = "src/unittest/resources/test_43.json"
+        'test 43'
+        input_file = "src/test/resources/test_43.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)

@@ -57,7 +57,7 @@ class MyTestCase(unittest.TestCase):
             os.remove(self.flow_file)
         with self.assertRaises(EnterpriseManagementException) as cm:
             self.project_budget.check_project_budget("ff341ef03100429eacdfea777d6bdd56")
-        self.assertIn("missing",str(cm.exception).lower())
+        self.assertIn("not found",str(cm.exception).lower())
 
     def test_tc_rf3_05_json_corrupt(self):
         'ruta 1_2_4_14'
