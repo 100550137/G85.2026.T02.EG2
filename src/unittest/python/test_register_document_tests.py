@@ -152,5 +152,115 @@ class MyTestCase(unittest.TestCase):
 
         self.assertEqual(signature, expected_hash)
 
+    @freeze_time("2026-03-27 12:00:00")
+    def test_14_document(self):
+        input_file = "src/unittest/resources/test_14.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_15_document(self):
+        input_file = "src/unittest/resources/test_15.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_16_document(self):
+        input_file = "src/unittest/resources/test_16.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_17_document(self):
+        input_file = "src/unittest/resources/test_17.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_18_document(self):
+        input_file = "src/unittest/resources/test_18.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_19_document(self):
+        input_file = "src/unittest/resources/test_19.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_20_document(self):
+        input_file = "src/unittest/resources/test_20.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_21_document(self):
+        input_file = "src/unittest/resources/test_21.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_22_document(self):
+        input_file = "src/unittest/resources/test_22.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_23_document(self):
+        input_file = "src/unittest/resources/test_23.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
 if __name__ == '__main__':
     unittest.main()
