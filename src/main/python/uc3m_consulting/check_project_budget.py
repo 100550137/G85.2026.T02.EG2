@@ -5,7 +5,7 @@ codigo para calcular el balance de los cantidades inflows y cantidades outlfows
 import json
 import re
 from datetime import datetime
-from .enterprise_management_exception import EnterpriseManagementException
+from src.main.python.uc3m_consulting.enterprise_management_exception import EnterpriseManagementException
 
 class ProjectBudget:
     'class ProjectBudget:'

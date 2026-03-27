@@ -2,8 +2,8 @@
 import unittest
 import json
 import os
-from uc3m_consulting.check_project_budget import ProjectBudget
-from uc3m_consulting.enterprise_management_exception import EnterpriseManagementException
+from src.main.python.uc3m_consulting.check_project_budget import ProjectBudget
+from src.main.python.uc3m_consulting.enterprise_management_exception import EnterpriseManagementException
 
 class MyTestCase(unittest.TestCase):
     'test class'
@@ -39,7 +39,7 @@ class MyTestCase(unittest.TestCase):
             {"PROJECT_ID": "ff341ef03100429eacdfea777d6bdd56", "inflow": "100.0", "outflow": "0.0"},
             {"PROJECT_ID": "ff341ef03100429eacdfea777d6bdd56", "inflow": "0.0", "outflow": "30.0"}
         ]
-        with open(self.flow_file, "w",encoding="uft-8") as f:
+        with open(self.flow_file, "w",encoding="utf-8") as f:
             json.dump(data,f)
         self.project_budget.check_project_budget("ff341ef03100429eacdfea777d6bdd56")
         with open(self.output_file, "r", encoding="utf-8") as f:
