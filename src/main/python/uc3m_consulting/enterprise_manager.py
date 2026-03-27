@@ -120,44 +120,71 @@ class EnterpriseManager:
     def register_document(input_file: str):
 
         if not os.path.exists(input_file):
-            raise EnterpriseManagementException("Error: archivo no encontrado")
+            raise EnterpriseManagementException("No se encuentra el archivo de entrada")
 
+            # CM-FR-02-O3: Caso formato no JSON
         try:
             with open(input_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
         except json.JSONDecodeError:
-            raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+            raise EnterpriseManagementException("El archivo no tiene formato JSON")
 
+            # CM-FR-02-O3: Caso estructura no esperada (faltan claves)
         if "PROJECT_ID" not in data or "FILENAME" not in data:
             raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
 
         project_id = data["PROJECT_ID"]
         file_name = data["FILENAME"]
 
-        input_data = "{" + f"alg:SHA-256, typ:DOCUMENT, project_id:{project_id}, file_name:{file_name}" + "}"
-        signature = hashlib.sha256(input_data.encode("utf-8")).hexdigest()
+        # CM-FR-02-P1: Validación de valores (Datos no válidos)
+        # 1. PROJECT_ID: 32 caracteres hexadecimales
+        if not re.fullmatch(r"[0-9a-fA-F]{32}", project_id):
+            raise EnterpriseManagementException("Los datos del JSON no tienen valores válidos")
 
+        # 2. FILENAME: 8 alfanum + (.pdf o .docx o .xlsx)
+        if not re.fullmatch(r"[a-zA-Z0-9]{8}\.(pdf|docx|xlsx)", file_name):
+            raise EnterpriseManagementException("Los datos del JSON no tienen valores válidos")
+
+        # CM-FR-02-P2: Generar instancia y Firma (file_signature)
+        try:
+            alg = "SHA-256"
+            typ = "DOCUMENT"
+            # El formato exacto según P2: {alg:, typ:, project_id:, file_name:}
+            # NOTA: Sin espacios tras las comas según el texto del enunciado
+            input_data = f"{{alg:{alg}, typ:{typ}, project_id:{project_id}, file_name:{file_name}}}"
+
+            file_signature = hashlib.sha256(input_data.encode("utf-8")).hexdigest()
+
+            # Timestamp en UTC
+            register_date = datetime.now(timezone.utc).timestamp()
+        except Exception:
+            raise EnterpriseManagementException("Error de procesamiento interno al obtener el file_signature")
+
+        # CM-FR-02-P3 / O2: Guardar en el fichero JSON
         storage_path = "document_store.json"
-
         content = []
         if os.path.exists(storage_path):
             with open(storage_path, "r", encoding="utf-8") as f:
                 try:
                     content = json.load(f)
-                except json.JSONDecodeError:
+                except:
                     content = []
 
         new_entry = {
+            "alg": alg,
+            "typ": typ,
             "project_id": project_id,
-            "file_signature": signature,
-            "release_date": datetime.now(timezone.utc).timestamp()
+            "file_name": file_name,
+            "register_date": register_date,
+            "file_signature": file_signature
         }
         content.append(new_entry)
 
         with open(storage_path, "w", encoding="utf-8") as f:
             json.dump(content, f, indent=4)
 
-        return signature
+        # CM-FR-02-O1: Salida de la cadena SHA-256
+        return file_signature
 
     @staticmethod
     def validate_cif(cif: str):
