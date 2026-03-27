@@ -115,6 +115,9 @@ class EnterpriseManager:
 
         return new_project.project_id
 
+    def register_document(self, input_file: str):
+        pass
+
     @staticmethod
     def validate_cif(cif: str):
         """Algoritmo de validación de CIF blindado contra caracteres no numéricos"""

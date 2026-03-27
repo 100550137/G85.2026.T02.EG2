@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_register_document_tests.MyTestCase-20260327014817" tests="1" file="test_register_document_tests.py" time="0.023" timestamp="2026-03-27T01:48:18" failures="1" errors="0" skipped="0">
+	<testcase classname="test_register_document_tests.MyTestCase" name="test_01_valid_registration" time="0.023" timestamp="2026-03-27T01:48:18">
+		<failure type="AssertionError" message="None != '6798059082264906561e14934a4c6806e579787a27d975390979401946894562'"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_document_tests.py", line 34, in test_01_valid_registration
+    self.assertEqual(signature, expected_hash)
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 907, in assertEqual
+    assertion_func(first, second, msg=msg)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 900, in _baseAssertEqual
+    raise self.failureException(msg)
+    ^^^^^^^^^^^
+AssertionError: None != '6798059082264906561e14934a4c6806e579787a27d975390979401946894562'
+]]></failure>
+	</testcase>
+</testsuite>
