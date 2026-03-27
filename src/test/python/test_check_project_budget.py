@@ -17,7 +17,7 @@ class MyTestCase(unittest.TestCase):
         if os.path.exists(self.output_file):
             os.remove(self.output_file)
     def tearDown(self):
-        """usado para limpiar despues de pruebas"""
+        """usado para limpiar después de pruebas"""
         if os.path.exists(self.flow_file):
             os.remove(self.flow_file)
         if os.path.exists(self.output_file):
@@ -44,7 +44,7 @@ class MyTestCase(unittest.TestCase):
         self.project_budget.check_project_budget("ff341ef03100429eacdfea777d6bdd56")
         with open(self.output_file, "r", encoding="utf-8") as f:
             result_json = json.loads(f.readline())
-            self.assertEqual(result_json["balance"], 70.0) #comprueba si la accumulación ha pasado
+            self.assertEqual(result_json["balance"], 70.0) #comprueba si la acumulación ha pasado
 
     def test_tc_rf3_03_id_invalido(self):
         """ruta 1_2_3"""
