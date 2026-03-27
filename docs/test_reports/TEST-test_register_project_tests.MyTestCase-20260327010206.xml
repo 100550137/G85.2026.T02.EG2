@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_register_project_tests.MyTestCase-20260327010206" tests="9" file="test_register_project_tests.py" time="0.051" timestamp="2026-03-27T01:02:06" failures="5" errors="0" skipped="0">
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_01" time="0.019" timestamp="2026-03-27T01:02:06"/>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_02" time="0.003" timestamp="2026-03-27T01:02:06"/>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_03" time="0.002" timestamp="2026-03-27T01:02:06"/>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_04" time="0.002" timestamp="2026-03-27T01:02:06"/>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_05" time="0.007" timestamp="2026-03-27T01:02:06">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 108, in test_05
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_06" time="0.004" timestamp="2026-03-27T01:02:06">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV2: El CIF no es válido"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 128, in test_06
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV2: El CIF no es válido
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_07" time="0.004" timestamp="2026-03-27T01:02:06">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 148, in test_07
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_08" time="0.004" timestamp="2026-03-27T01:02:06">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV5: El primer carácter debe ser una letra"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 168, in test_08
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV5: El primer carácter debe ser una letra
+]]></failure>
+	</testcase>
+	<testcase classname="test_register_project_tests.MyTestCase" name="test_09" time="0.004" timestamp="2026-03-27T01:02:06">
+		<failure type="AssertionError" message="El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 651, in run
+    self._callTestMethod(testMethod)
+    
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 606, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 951, in wrapper
+    return self._call_with_time_factory(time_factory, func=func, args=args, kwargs=kwargs)
+    ^^^^^^^
+  File "C:\Users\Javier\PycharmProjects\G85.2026.T02.EG2\.venv\Lib\site-packages\freezegun\api.py", line 934, in _call_with_time_factory
+    result = func(*args, **kwargs)
+    ^^^^^^^^^^^
+  File "c:\users\javier\pycharmprojects\g85.2026.t02.eg2\src\unittest\python\test_register_project_tests.py", line 188, in test_09
+    self.fail(f"El registro de proyecto lanzó una excepción inesperada: {e.message}")
+    ^^^^^^^^^^^
+  File "C:\Users\Javier\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 732, in fail
+    raise self.failureException(msg)
+    ^^^^^^^^^^^^^^^
+AssertionError: El registro de proyecto lanzó una excepción inesperada: CENV3/4: El CIF debe tener 9 caracteres
+]]></failure>
+	</testcase>
+</testsuite>
