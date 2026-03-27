@@ -119,26 +119,43 @@ class EnterpriseManager:
 
     def register_document(self, input_file: str):
 
-        with open(input_file, "r", encoding="utf-8") as f:
-            data = json.load(f)
+        if not os.path.exists(input_file):
+            raise EnterpriseManagementException("Error: archivo no encontrado")
+
+        try:
+            with open(input_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except json.JSONDecodeError:
+            raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
+
+        if "PROJECT_ID" not in data or "FILENAME" not in data:
+            raise EnterpriseManagementException("El JSON no tiene la estructura esperada")
 
         project_id = data["PROJECT_ID"]
         file_name = data["FILENAME"]
 
-        input_data = "{" + f"alg: SHA-256, typ: DOCUMENT, project_id: {project_id}, file_name: {file_name}" + "}"
-
+        input_data = "{" + f"alg:SHA-256, typ:DOCUMENT, project_id:{project_id}, file_name:{file_name}" + "}"
         signature = hashlib.sha256(input_data.encode("utf-8")).hexdigest()
 
         storage_path = "document_store.json"
 
-        registro = {
+        content = []
+        if os.path.exists(storage_path):
+            with open(storage_path, "r", encoding="utf-8") as f:
+                try:
+                    content = json.load(f)
+                except json.JSONDecodeError:
+                    content = []
+
+        new_entry = {
             "project_id": project_id,
             "file_signature": signature,
-            "register_date": datetime.now(timezone.utc).timestamp()
+            "release_date": datetime.now(timezone.utc).timestamp()
         }
+        content.append(new_entry)
 
         with open(storage_path, "w", encoding="utf-8") as f:
-            json.dump([registro], f)
+            json.dump(content, f, indent=4)
 
         return signature
 

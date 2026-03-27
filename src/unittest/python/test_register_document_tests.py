@@ -8,16 +8,53 @@ from uc3m_consulting.enterprise_management_exception import EnterpriseManagement
 
 class MyTestCase(unittest.TestCase):
 
+    def setUp(self):
+        """Limpiar el almacén antes de cada test para evitar basura"""
+        if os.path.exists("document_store.json"):
+            os.remove("document_store.json")
+
     @freeze_time("2026-03-27 12:00:00")
-    def test_01_valid_registration(self):
-        input_file = "src/unittest/resources/test_01.json"  # El JSON que me has pasado
+    def test_01_document(self):
+        input_file = "src/unittest/resources/test_01.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)
 
-        # Este es el hash que corresponde a:
-        # {alg:SHA-256, typ:DOCUMENT, project_id:a1b2c3d4e5f678901234567890abcdef, file_name:ABC12345.pdf}
-        expected_hash = "ed2883d8c2b8d42127a2c01df2bbdebdf0b5af4951d67b6b9e1e43881432c064"
+        expected_hash = "28a20416b453507cda2ffceda801c379569cdd1d0f97662e0592a35cc7f87293"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_02_document(self):
+        input_file = "src/unittest/resources/test_02.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "44544801463487bcc272f3dc0f01344ddec749d82c7e469bdb1bf5a93f73030b"
+
+        self.assertEqual(signature, expected_hash)
+
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_03_document(self):
+        input_file = "src/unittest/resources/test_03.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_04_document(self):
+        input_file = "src/unittest/resources/test_04.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
 
         self.assertEqual(signature, expected_hash)
 
