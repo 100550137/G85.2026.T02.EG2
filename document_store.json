@@ -1,0 +1,17 @@
+[
+    {
+        "project_id": "a1b2c3d4e5f678901234567890abcdef",
+        "file_signature": "28a20416b453507cda2ffceda801c379569cdd1d0f97662e0592a35cc7f87293",
+        "release_date": 1774612800.0
+    },
+    {
+        "project_id": "a1b2c3d4e5f678901234567890abcdef",
+        "file_signature": "44544801463487bcc272f3dc0f01344ddec749d82c7e469bdb1bf5a93f73030b",
+        "release_date": 1774612800.0
+    },
+    {
+        "project_id": "a1b2c3d4e5f678901234567890abcdef",
+        "file_signature": "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735",
+        "release_date": 1774612800.0
+    }
+]

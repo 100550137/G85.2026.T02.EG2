@@ -8,11 +8,6 @@ from uc3m_consulting.enterprise_management_exception import EnterpriseManagement
 
 class MyTestCase(unittest.TestCase):
 
-    def setUp(self):
-        """Limpiar el almacén antes de cada test para evitar basura"""
-        if os.path.exists("document_store.json"):
-            os.remove("document_store.json")
-
     @freeze_time("2026-03-27 12:00:00")
     def test_01_document(self):
         input_file = "src/unittest/resources/test_01.json"
@@ -50,6 +45,105 @@ class MyTestCase(unittest.TestCase):
     @freeze_time("2026-03-27 12:00:00")
     def test_04_document(self):
         input_file = "src/unittest/resources/test_04.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_05_document(self):
+        input_file = "src/unittest/resources/test_05.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_06_document(self):
+        input_file = "src/unittest/resources/test_06.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_07_document(self):
+        input_file = "src/unittest/resources/test_07.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_08_document(self):
+        input_file = "src/unittest/resources/test_08.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_09_document(self):
+        input_file = "src/unittest/resources/test_09.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_10_document(self):
+        input_file = "src/unittest/resources/test_10.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_11_document(self):
+        input_file = "src/unittest/resources/test_11.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_12_document(self):
+        input_file = "src/unittest/resources/test_12.json"
+        manager = EnterpriseManager()
+
+        signature = manager.register_document(input_file)
+
+        expected_hash = "f48ff8bc76a427e69f19a3ebe63b27d8aa2a55e6cf0596e927cbe27d25c67735"
+
+        self.assertEqual(signature, expected_hash)
+
+    @freeze_time("2026-03-27 12:00:00")
+    def test_13_document(self):
+        input_file = "src/unittest/resources/test_13.json"
         manager = EnterpriseManager()
 
         signature = manager.register_document(input_file)

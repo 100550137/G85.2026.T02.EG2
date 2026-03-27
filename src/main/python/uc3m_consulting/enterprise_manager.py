@@ -5,7 +5,6 @@ import re
 from datetime import datetime, timezone
 from uc3m_consulting.enterprise_project import EnterpriseProject
 from uc3m_consulting.enterprise_management_exception import EnterpriseManagementException
-from uc3m_consulting.project_document import ProjectDocument
 
 
 class EnterpriseManager:
@@ -117,7 +116,8 @@ class EnterpriseManager:
 
         return new_project.project_id
 
-    def register_document(self, input_file: str):
+    @staticmethod
+    def register_document(input_file: str):
 
         if not os.path.exists(input_file):
             raise EnterpriseManagementException("Error: archivo no encontrado")
